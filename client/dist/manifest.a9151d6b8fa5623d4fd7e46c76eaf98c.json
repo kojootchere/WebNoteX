@@ -1,0 +1,16 @@
+{
+  "icons": [
+    {
+      "src": "./icon_512x512.2d3836a4eb187facfb4ef39effa60a03.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "name": "Offline Text Editor",
+  "short_name": "Offline Text Editor",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Offline Text Editor!",
+  "background_color": "#ffffff"
+}
