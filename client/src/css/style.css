@@ -1,4 +1,4 @@
-/* app shell CSS */
+/* Define color variables and reusable dimensions for the app's theme */
 :root {
   --primary: #31a9e1;
   --gray: #ececec;
@@ -8,6 +8,7 @@
   --navbar-height: 50px;
 }
 
+/* Base body styles applying the color background and font stack */
 body {
   margin: 0;
   background-color: var(--monoaki);
@@ -16,10 +17,12 @@ body {
     sans-serif;
 }
 
+/* Default styling for h1 elements */
 h1 {
   font-size: 22px;
 }
 
+/* Styles for the navigation bar, including layout and color */
 #navbar {
   height: var(--navbar-height);
   background-color: var(--primary);
@@ -33,10 +36,12 @@ h1 {
   letter-spacing: 0.9px;
 }
 
+/* Additional branding styles for the navbar images */
 .navbar-brand img {
   padding-top: 10px;
 }
 
+/* Keyframe animation styles for a loading spinner */
 .loading-spinner {
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
@@ -49,6 +54,7 @@ h1 {
   border-radius: 50%;
 }
 
+/* Container styles for the loading spinner to center it on the screen */
 .loading-container {
   display: flex;
   justify-content: center;
@@ -56,30 +62,34 @@ h1 {
   height: calc(100vh - var(--navbar-height));
 }
 
+/* Keyframes for the loading spinner's continuous rotation */
 @keyframes rotate-forever {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
 
+/* Styles for app update notifications, hidden by default */
 .app-update {
   display: none;
   position: absolute;
   right: 10px;
 }
 
+/* Modifier class to make app update notifications visible */
 .app-update.show {
   display: block;
 }
 
+/* Spacing for buttons within the navbar */
 .nav-btn {
   margin: 25px;
 }
 
+/* Base styles for buttons including padding, borders, and default colors */
 .btn {
   text-align: center;
   display: inline-block;
@@ -95,116 +105,130 @@ h1 {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+/* Hover effect for all button types increasing contrast */
 .btn:hover {
   background-color: #cecece;
   cursor: pointer;
 }
 
+/* Additional styles to modify button shapes, sizes, and block-level display */
 .btn.btn-squared {
   border-radius: 0;
 }
-
 .btn.btn-sm {
   font-size: 0.85rem;
   padding: 0.3rem 0.9rem;
 }
-
 .btn.btn-lg {
   font-size: 1.25rem;
   padding: 0.8rem 1.4rem;
 }
-
 .btn.btn-block {
   width: 100%;
   display: block;
   text-align: center;
 }
 
+/* Theme-specific button styles for various purposes, like primary actions or warnings */
 .btn.btn-primary {
   background-color: #2d3e50;
   color: #d9e9e8;
 }
-
 .btn.btn-primary:hover {
   background-color: #57779a;
 }
-
 .btn.btn-danger {
   background-color: #e64c66;
   color: #ffffff;
 }
-
 .btn.btn-danger:hover {
   background-color: #ee8294;
 }
 
+/* Styles for the 'info' themed buttons */
 .btn.btn-info {
   background-color: #1bbc9b;
   color: #ffffff;
 }
 
+/* Hover state for the 'info' themed buttons */
 .btn.btn-info:hover {
   background-color: #31e1bd;
 }
 
+/* Styles for the 'light' themed buttons */
 .btn.btn-light {
   background-color: #d9e9e8;
   color: #1a1a1a;
 }
 
+/* Hover state for the 'light' themed buttons */
 .btn.btn-light:hover {
   background-color: #84b8b4;
 }
 
+/* Styles for the 'dark' themed buttons */
 .btn.btn-dark {
   background-color: #1a1a1a;
   color: #d9e9e8;
 }
 
+/* Hover state for the 'dark' themed buttons */
 .btn.btn-dark:hover {
   background-color: #5f5f5f;
 }
 
+/* Styles for the 'white' themed buttons */
 .btn.btn-white {
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
+/* Hover state for the 'white' themed buttons */
 .btn.btn-white:hover {
   background-color: #cccccc;
 }
 
+/* Styles for the 'black' themed buttons */
 .btn.btn-black {
   background-color: #000000;
   color: #ffffff;
 }
 
+/* Hover state for the 'black' themed buttons */
 .btn.btn-black:hover {
   background-color: #666666;
 }
 
+/* Styles for link-like buttons */
 .btn.btn-link {
   background-color: #1b89bc;
   color: #ffffff;
 }
 
+/* Hover state for link-like buttons */
 .btn.btn-link:hover {
   background-color: #31a9e1;
 }
 
+/* Responsive adjustments for the navigation and headers on mobile screens */
 @media only screen and (max-width: 600px) {
+  /* Hide the navigation buttons on smaller screens */
   .nav-btn {
     display: none;
   }
 
+  /* Hide the navbar branding on smaller screens */
   .navbar-brand {
     display: none;
   }
 
+  /* Center the navbar contents on smaller screens */
   #navbar {
     justify-content: center;
   }
 
+  /* Adjust the font size of h1 headers on smaller screens */
   h1 {
     font-size: 18px;
   }
