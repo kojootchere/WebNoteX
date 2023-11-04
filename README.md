@@ -17,7 +17,7 @@ Key Features:
 - [License](#license)
 - [Contributions](#contributions)
 - [Questions](#questions)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 - [Link to the Deployed Application](#link-to-the-deployed-application)
 
 ## Usage
@@ -36,9 +36,9 @@ N/A
 
 For any questions, please contact me at [https://github.com/kojootchere](https://github.com/kojootchere) or [email me](mailto:kojootchere@gmail.com).
 
-## Screenshots
+## Screenshot
 
-![MementoScribe Landing Page](./Assets/00-demo.gif)
+![WebNoteX GIF](./Assets/00-demo.gif)
 
 ## Link to the Deployed Application
 
